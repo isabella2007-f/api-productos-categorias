@@ -90,7 +90,14 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
     'DEFAULT_VERSION': 'v1',
-    'ALLOWED_VERSIONS': ['v1']
+    'ALLOWED_VERSIONS': ['v1'],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
 }
 
 ROOT_URLCONF = 'api_producto.urls'
