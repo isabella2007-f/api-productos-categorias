@@ -1,0 +1,12 @@
+# Ignorar el entorno virtual
+osorio/
+# Ignorar archivos de entorno
+*.env
+# Ignorar archivos de bytecode de Python
+*.pyc
+# Ignorar directorios de caché de Python
+__pycache__/
+# Ignorar bases de datos SQLite
+*.sqlite3
+# Ignorar archivos de registro
+*.log
